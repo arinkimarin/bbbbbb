@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>빈 강의실 확인</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <h1 id="building-name">공학관B</h1>
+    <ul id="floor-menu">
+      <li><button onclick="handleFloorClick('3F')">3F</button></li>
+      <li><button onclick="handleFloorClick('4F')">4F</button></li>
+      <li><button onclick="handleFloorClick('5F')">5F</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="current-time-container">
+      <div id="current-time"></div>
+    </div>
+    <div id="floorDisplay"></div>
+    <div id="room-container" class="room-grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

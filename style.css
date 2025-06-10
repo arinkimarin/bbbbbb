@@ -1,0 +1,83 @@
+/* 전체 레이아웃 */
+
+body {
+  margin: 0;
+  display: flex;
+  font-family: Arial, sans-serif;
+}
+
+/* 왼쪽 메뉴 */
+nav {
+  width: 150px;
+  height: 100vh;
+  background-color: #f2f2f2;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* 상상관 텍스트 */
+#building-name {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 0 20px 0;
+}
+#floor-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#floor-menu li {
+  margin-bottom: 10px;
+}
+
+#floor-menu button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#floor-menu button:hover {
+  background-color: #bbb;
+}
+#floorDisplay {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+#current-time {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 80px); /* 5칸짜리 가로 */
+  gap: 12px;
+  padding: 30px;
+}
+
+.room-box {
+  width: 80px;
+  height: 80px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* ✅ 사용 가능/불가능 색상 구분 */
+.available {
+  background-color: lightgreen;
+}
+
+.occupied {
+  background-color: lightcoral;
+}
